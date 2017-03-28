@@ -71,7 +71,7 @@ pizzaChallenge.controller('PizzaController', ['$scope', 'PizzaService', function
 
   function computePercentage() {
     for(i = 0; i < 4; i++)
-      groups[i].percentage = (groups[i].pizzas.length * 100 / (pizzas.length-2)).toFixed(2);
+      groups[i].percentage = (groups[i].pizzas.length * 100 / (pizzas.length-2));
     computeCheapest();
   }
 
